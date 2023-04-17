@@ -1,6 +1,6 @@
-def get_powers(num):
-    return num ** 2, num ** 3
+n = int(input())
+m = int(input())
 
-num = int(input('Введите число : '))
-
-print()
+for _ in range(n, m - 1, -1):
+    if _ %2 != 0:
+        print(_)
