@@ -1,6 +1,11 @@
 n = int(input())
-m = int(input())
+li = []
+for _ in range(n):
+    li.append(input())
+index = int(input())
+res = ''
+for s in li:
+    if len(s) >= index:
+        res += s[index - 1]
 
-for _ in range(n, m - 1, -1):
-    if _ %2 != 0:
-        print(_)
+print(res)
